@@ -1,0 +1,146 @@
+
+:root {
+    --primary-purple: #7c3aed;
+    --dark-purple: #5b21b6;
+    --light-purple: #f5f3ff;
+    --soft-purple: #ede9fe;
+    --border-purple: #ddd6fe;
+    --white: #ffffff;
+    --text-dark: #2e2940;
+}
+
+
+
+body {
+    background-color: var(--light-purple);
+    color: var(--text-dark);
+}
+
+
+
+.navbar {
+    background-color: var(--primary-purple) !important;
+}
+
+.navbar-brand {
+    font-weight: 600;
+}
+
+
+
+.card {
+    background-color: var(--white);
+    border: 1px solid var(--border-purple);
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(124, 58, 237, 0.08);
+}
+
+.card h5 {
+    color: #6b7280;
+}
+
+.card h3 {
+    color: var(--primary-purple);
+    font-weight: 700;
+}
+
+
+
+.form-control,
+.form-select {
+    border: 1px solid var(--border-purple);
+    border-radius: 8px;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--primary-purple);
+    box-shadow: 0 0 0 0.2rem rgba(124, 58, 237, 0.15);
+}
+
+
+
+.btn-primary {
+    background-color: var(--primary-purple);
+    border-color: var(--primary-purple);
+}
+
+.btn-primary:hover {
+    background-color: var(--dark-purple);
+    border-color: var(--dark-purple);
+}
+
+
+
+.table {
+    background-color: var(--white);
+}
+
+.table-dark th {
+    background-color: var(--primary-purple) !important;
+    border-color: var(--primary-purple);
+    color: var(--white);
+}
+
+.table td {
+    vertical-align: middle;
+}
+
+
+
+.btn-warning {
+    background-color: var(--soft-purple);
+    border-color: var(--soft-purple);
+    color: var(--dark-purple);
+}
+
+.btn-warning:hover {
+    background-color: var(--border-purple);
+    border-color: var(--border-purple);
+    color: var(--dark-purple);
+}
+
+
+
+#categoryFilter {
+    max-width: 300px;
+}
+
+
+/* =========================
+   Spinner
+========================= */
+
+.spinner-border {
+    color: var(--primary-purple) !important;
+}
+
+
+
+.modal-header {
+    background-color: var(--light-purple);
+    border-bottom: 1px solid var(--border-purple);
+}
+
+.modal-title {
+    color: var(--dark-purple);
+    font-weight: 600;
+}
+
+
+
+@media (max-width: 768px) {
+
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .card {
+        margin-bottom: 10px;
+    }
+
+    #categoryFilter {
+        max-width: 100%;
+    }
+}
